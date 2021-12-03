@@ -19,6 +19,7 @@ body {
   border-radius: 16px;
   overflow: hidden;
   transition: 0.2s;
+  padding-top: 10px;
 }
 .recipe-list-container {
   display: flex;
