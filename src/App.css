@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: whitesmoke;
+  font-family: Lobster Two;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recipe-name {
+  font-size: 30px;
+  padding: 16px;
+  margin: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recipe-pic {
+  height: 220px;
+  width: 420px;
+  object-fit: cover;
+}
+.recipe-container {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.recipe-list-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 24px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipe-container:hover {
+  transform: scale(1.1);
 }
